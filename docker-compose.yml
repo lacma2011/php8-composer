@@ -1,0 +1,8 @@
+services:
+    php:
+      container_name: my_php_container__
+      build:
+          context: ./php
+          dockerfile: ./php.Dockerfile
+      volumes:
+        - ./php/:/usr/src/myapp
